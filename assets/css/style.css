@@ -1,0 +1,104 @@
+.char           {
+                    height: 100px;
+                    width: 100px;
+                    float: left;
+                    margin: 25px;
+                    border-radius: 25px;
+                    font-size: 10px;
+                }
+.enemy          {
+                    height: 100px;
+                    width: 100px;
+                    float: left;
+                    margin-left: 25px;
+                    border-radius: 25px;
+                    font-size: 10px;
+                }
+.btn            {
+                    visibility: hidden;
+                }
+.btn-warning    {
+                    height: 50px; 
+                    width: 150px;
+                }
+body            {
+                    background: url(../images/BG.jpg) no-repeat center center fixed; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+.charnamer      {
+                background-color: black;
+                width: 50px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin-left: 25px;
+                font-size: 1em;
+                color: white;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                
+                }
+h1              {
+                    font-size: 1em;
+                    color: white;
+                }
+#opponents      {
+
+                }
+.RHB            {
+                    position: relative;
+                    top: 80px;
+                    height: 20px;
+                    background-color: red;
+                }
+.GHB            {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: white;
+                    position: relative;
+                    top: 60px;
+                    height: 20px;
+                    background-color: green;
+                }
+.enRHB          {
+                    position: relative;
+                    top: 80px;
+                    height: 20px;
+                    background-color: red;
+                }
+.enGHB          {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: white;
+                    position: relative;
+                    top: 60px;
+                    height: 20px;
+                    background-color: green;
+                }
+#charspot       {}
+#oppspot        {height: 250px;}
+#charholder     {
+                    padding-left: 100px;
+                    height: 900px;
+                }
+.jake           {
+                    background-image: url(../images/jake.jpg);
+                    background-size: 100px;
+                }
+.finn           {
+                    background-image: url(../images/finn.jpg);
+                    background-size: 100px;
+                    background-position: 0px,-10px,0px,0px;
+                }
+.bubblegum      {
+    
+                    background-image: url(../images/bubblegum.jpg);
+                    background-size: 120px;
+                    background-position: -10px,0px,0px,0px;
+                    
+                }
+.marceline      {   color: black;
+                    background-image: url(../images/marceline.jpg);
+                    background-size: 120px;
+                    background-position: -10px,0px,0px,0px;
+                }
