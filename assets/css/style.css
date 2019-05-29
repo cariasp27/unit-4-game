@@ -1,16 +1,20 @@
 .char           {
                     height: 100px;
                     width: 100px;
-                    float: left;
+                    float: right;
                     margin: 25px;
                     border-radius: 25px;
                     font-size: 10px;
                 }
+.container {
+    height: 500px;
+}
 .enemy          {
                     height: 100px;
                     width: 100px;
                     float: left;
                     margin-left: 25px;
+                    margin-top: 20px;
                     border-radius: 25px;
                     font-size: 10px;
                 }
@@ -44,9 +48,6 @@ h1              {
                     font-size: 1em;
                     color: white;
                 }
-#opponents      {
-
-                }
 .RHB            {
                     position: relative;
                     top: 80px;
@@ -75,30 +76,75 @@ h1              {
                     height: 20px;
                     background-color: green;
                 }
-#charspot       {}
-#oppspot        {height: 250px;}
+.rower{ visibility: hidden;}
+#oppspot        {
+    height: 250px;
+}
 #charholder     {
                     padding-left: 100px;
-                    height: 900px;
                 }
 .jake           {
                     background-image: url(../images/jake.jpg);
                     background-size: 100px;
+                    margin: auto;
+                    margin-top: 20px;
                 }
 .finn           {
                     background-image: url(../images/finn.jpg);
                     background-size: 100px;
                     background-position: 0px,-10px,0px,0px;
+                    margin: auto;
+                    margin-top: 20px;
                 }
 .bubblegum      {
     
                     background-image: url(../images/bubblegum.jpg);
                     background-size: 120px;
                     background-position: -10px,0px,0px,0px;
+                    margin: auto;
+                    margin-top: 20px;
                     
                 }
 .marceline      {   color: black;
                     background-image: url(../images/marceline.jpg);
                     background-size: 120px;
                     background-position: -10px,0px,0px,0px;
+                    margin: auto;
+                    margin-top: 20px;
                 }
+/* MOBILE RESPONSIVNESS */
+@media screen and (max-width: 1000px) {
+    #warrior {
+        max-width: 500px;
+    }
+    #winscrn {
+        max-width: 600;
+    }
+      }
+@media screen and (max-width: 768px) {
+#charspot{ min-height: 150px;}
+.jake {
+    float: none;
+    margin: auto
+}
+.finn {
+    float: none;
+    margin: auto;
+}
+.bubblegum {
+    float: none;
+    margin: auto;
+}
+.marceline {
+    float: none;
+    margin: auto;
+}
+.enemy {
+    float: none;
+    margin: auto;
+}
+#warrior {
+    max-width: 300px;
+}
+}
+

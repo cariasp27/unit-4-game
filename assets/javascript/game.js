@@ -23,7 +23,7 @@ let intgame = {
         $(dyenm).append(enmname);
         $(dyenm).append(enmRHB);
         $(dyenm).append(enmGHB);
-        $(dyenm).css({margin:25});
+        // $(dyenm).css({"margin":"auto"});
         $("#oppspot").append(dyenm);
         
     },
@@ -85,7 +85,7 @@ var character = [
     },
     bubblegum = {
         name: "bubblegum",
-        hp: 150,
+        hp: 140,
         ap: 2,
         cap: 3,
     },
@@ -109,6 +109,7 @@ $(document).ready(function () {
     }
     $(".char").on("click", function () {
         // when a character is clicked, they become the player and are moved to the proper div.
+            $(".rower").css({"visibility": "visible"})
             $("#choice").empty();
             playerselected = character[$(this).children(".charnamer").val()];
             plyHP = playerselected.hp
@@ -136,7 +137,7 @@ $(document).ready(function () {
     $(".btn-warning").on("click", function(){
         if (wins === 3){
         alert("you win!");
-        $(".logo").html("<center><img src='assets/images/thankyou.png'alt='logo'></center>")
+        $(".logo").html("<center><img src='assets/images/thankyou.png'alt='logo' id='winscrn'></center>")
         $("#charholder").html("<img src='assets/images/winscreen.jpg'alt='winscreen'>")
         $("#charspot").empty();
         $("#buttonspot").empty();
